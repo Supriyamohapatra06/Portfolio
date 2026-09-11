@@ -1,3 +1,4 @@
+"use client";
 import { HeroScrollDemo } from "@/components/HeroScrollDemo";
 
 export default function Home() {
