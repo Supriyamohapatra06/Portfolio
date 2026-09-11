@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+/* ─── Cyber-Obsidian & Neural Emerald Design Tokens ─── */
+:root {
+  --background: #080B10;
+  --foreground: #F9FAFB;
+  --accent-primary: #10B981;
+  --accent-secondary: #6366F1;
+  --accent-tertiary: #06B6D4;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --surface-glass: rgba(13, 18, 28, 0.72);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-jakarta);
+  --font-mono: var(--font-jetbrains);
+  --font-display: var(--font-syne);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans, system-ui, sans-serif);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: rgba(16, 185, 129, 0.35);
+  color: #fff;
+}
+
+/* ─── Scrollbar Styling ─── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0D121C;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(16, 185, 129, 0.4);
+  border-radius: 99px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #10B981;
+}
